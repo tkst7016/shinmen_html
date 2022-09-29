@@ -2519,53 +2519,53 @@ h2.hedding-icon {
 }
 
 /* SERIES-A PAGE CSS START FROM HERE */
-.tab_content .space-top {
+#series .tab_content .space-top {
   margin-top: 6%;
   margin-bottom: 4%;
 }
 
-.tab_content .col-3 .series-name {
+#series .tab_content .col-3 .series-name {
   font-size: 5rem;
   opacity: 0.7;
 }
 
-.tab_content .col-3 .series-heading {
+#series .tab_content .col-3 .series-heading {
   opacity: 0.7;
   margin-left: 20px;
 }
 
-.tab_content .col-4 .image {
+#series .tab_content .col-4 .image {
   height: 80px;
   width: 160px;
   margin-left: 20px;
 }
 
-.tab_content .col-4 .img {
+#series .tab_content .col-4 .img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
 }
 
-.tab_content .tab-content .first_tab .image_logo {
+#series .tab_content .tab-content .first_tab .image_logo {
   height: 120px;
   width: 200px;
   margin-right: 30px;
 }
 
-.tab_content .tab-content .first_tab .image_logo .img {
+#series .tab_content .tab-content .first_tab .image_logo .img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
 }
 
-.tab-content .accordion_border {
+#series .tab-content .accordion_border {
   border-radius: unset;
   margin-bottom: 20px;
 }
 
-.tab-content .accordion_border .accordion-button {
+#series .tab-content .accordion_border .accordion-button {
   border-radius: unset;
   color: #fff;
   background-color: #000;
