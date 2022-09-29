@@ -153,6 +153,7 @@ p {
 }
 
 .view-more a,
+.view-more button,
 .page-link a,
 .button-link a {
   position: relative;
