@@ -319,7 +319,7 @@ span.feature-text {
     display: inline-block;
     height: 40px;
     margin-right: 20px;
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
     padding: 0 12px;
     border: solid 2px #ffc800;
     color: #ffc800;
@@ -1048,16 +1048,19 @@ span.feature-text {
     .card {
         background: inherit;
     }
-    .cat-box{
+
+    .cat-box {
         width: 50%;
         margin: 2em auto;
     }
-    .cat-hd{
+
+    .cat-hd {
         text-align: center;
     }
-    .cat-box img{
+
+    .cat-box img {
         width: 50%;
-        margin: 1em 25%; 
+        margin: 1em 25%;
     }
 }
 
@@ -1108,6 +1111,7 @@ span.feature-text {
     .header-banner {
         background-image: url("/assets/images/head_recruit.png");
     }
+
     .view-more a {
         width: 280px;
     }
@@ -1120,6 +1124,32 @@ span.feature-text {
 
     .requirements .divider {
         opacity: 1;
+    }
+}
+
+#news {
+    /*  bootstrap ページネーション修正 */
+
+    .page-link {
+        background-color: transparent !important;
+        margin: 0 0.5em;
+        color: #FFF;
+    }
+
+    .page-link a {
+        color: #FFF !important;
+    }
+
+    .active>.page-link,
+    .page-link.active {
+        border: 1px solid #FFF !important;
+        background-color: #FFF !important;
+        color: #000;
+    }
+
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+        border: 0;
     }
 }
 
@@ -2437,21 +2467,4 @@ h2.hedding-icon {
 
 .accordion-item:last-of-type .accordion-button.collapsed {
     border-radius: 0;
-}
-/*  bootstrap ページネーション修正 */
-.page-link{
-    background-color: transparent!important;
-    margin: 0 0.5em;
-    color: #FFF;
-}
-.page-link a{
-    color: #FFF!important;
-}
-.active>.page-link, .page-link.active{
-    border: 1px solid #FFF!important;
-    background-color: #FFF!important;
-    color: #000;
-}
-.page-item:first-child .page-link , .page-item:last-child .page-link{
-    border: 0;
 }

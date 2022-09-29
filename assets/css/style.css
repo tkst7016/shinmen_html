@@ -919,6 +919,28 @@ span.feature-text::after {
   opacity: 1;
 }
 
+#news {
+  /*  bootstrap ページネーション修正 */
+}
+#news .page-link {
+  background-color: transparent !important;
+  margin: 0 0.5em;
+  color: #FFF;
+}
+#news .page-link a {
+  color: #FFF !important;
+}
+#news .active > .page-link,
+#news .page-link.active {
+  border: 1px solid #FFF !important;
+  background-color: #FFF !important;
+  color: #000;
+}
+#news .page-item:first-child .page-link,
+#news .page-item:last-child .page-link {
+  border: 0;
+}
+
 #news .page-title .image-wrapper {
   width: 100px;
   height: 75px;
@@ -1991,25 +2013,4 @@ h2.hedding-icon {
 
 .accordion-item:last-of-type .accordion-button.collapsed {
   border-radius: 0;
-}
-
-/*  bootstrap ページネーション修正 */
-.page-link {
-  background-color: transparent !important;
-  margin: 0 0.5em;
-  color: #FFF;
-}
-
-.page-link a {
-  color: #FFF !important;
-}
-
-.active > .page-link, .page-link.active {
-  border: 1px solid #FFF !important;
-  background-color: #FFF !important;
-  color: #000;
-}
-
-.page-item:first-child .page-link, .page-item:last-child .page-link {
-  border: 0;
 }/*# sourceMappingURL=style.css.map */
