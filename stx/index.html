@@ -14,6 +14,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/slick.css"/>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -76,7 +77,27 @@
                 </ol>
               </nav>
               <div class="subtitle-icon">Brand</div>
-              <div id="carouselExampleIndicators" class="logo-stx carousel slide" data-bs-ride="carousel">
+              <div class="top-slick-slider">
+                <ul class="top-slick-slider-inner">
+                  <li class="top-slick-slider-item">
+                    <img src="/assets/images/F_IH_4914.png"
+                    alt="unsplash" />
+                  </li>
+                  <li class="top-slick-slider-item">
+                    <img src="/assets/images/F_IH_3872@2x.png"
+                    alt="unsplash" />
+                  </li>
+                  <li class="top-slick-slider-item">
+                    <img src="/assets/images/F_IH_5026.png"
+                    alt="unsplash" />
+                  </li>
+                  <li class="top-slick-slider-item">
+                    <img src="/assets/images/F_IH_3872@2x.png"
+                    alt="unsplash" />
+                  </li>
+                </ul>
+              </div>
+              <!-- <div id="carouselExampleIndicators" class="logo-stx carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -145,7 +166,7 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
@@ -406,6 +427,31 @@
         owl.trigger('stop.owl.autoplay')
       })
     })
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.top-slick-slider-inner').slick({
+        adaptiveHeight: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button class="top-slick-slider-prev top-slick-slider-arrow" aria-label="Previous" type="button">' +
+                  '<span class="carousel-control-prev-icon" aria-hidden="true"></span>' +
+                '</button>',
+        nextArrow: '<button class="top-slick-slider-next top-slick-slider-arrow" aria-label="Previous" type="button">' +
+                  '<span class="carousel-control-next-icon" aria-hidden="true"></span>' +
+                '</button>',
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+    });
   </script>
 </body>
 

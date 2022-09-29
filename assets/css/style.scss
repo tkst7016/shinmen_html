@@ -2456,3 +2456,79 @@ h2.hedding-icon {
 .page-item:first-child .page-link , .page-item:last-child .page-link{
     border: 0;
 }
+
+.top-slick-slider {
+    padding-bottom: 32px;
+
+    &-inner {
+        padding-left: 0!important;
+        position: relative;
+    }
+
+    &-item {
+        @media screen and (min-width: 992px) {
+            width: calc(100% / 3);
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .top-slick-slider-arrow {
+        width: 4%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: transparent;
+        z-index: 1;
+    }
+
+    .top-slick-slider-prev {
+        @media screen and (min-width: 992px) {
+            left: 1%;
+        }
+    }
+
+    .top-slick-slider-next {
+        @media screen and (min-width: 992px) {
+            right: 1%;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        position: absolute;
+        margin-right: 0px;
+        margin-left: 0px;
+        left: 56%;
+        bottom: -60px;
+
+        li {
+            list-style-type:none;
+
+            button {
+                display: block;
+                margin-right: 3px;
+                margin-left: 3px;
+                padding: 4px 4px;
+                background-color: #fff;
+                border: transparent;
+                font-size: 0;
+            }
+        }
+
+        .slick-active {
+            button {
+                background-color: #ffc107;
+            }
+        }
+    }
+}

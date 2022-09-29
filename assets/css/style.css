@@ -2014,3 +2014,68 @@ h2.hedding-icon {
 .page-item:first-child .page-link, .page-item:last-child .page-link {
   border: 0;
 }/*# sourceMappingURL=style.css.map */
+
+.top-slick-slider {
+  padding-bottom: 32px;
+}
+.top-slick-slider-inner {
+  padding-left: 0 !important;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .top-slick-slider-item {
+    width: calc(100% / 3);
+  }
+}
+@media screen and (max-width: 991px) {
+  .top-slick-slider-item {
+    width: 100%;
+  }
+}
+.top-slick-slider-item img {
+  width: 100%;
+}
+.top-slick-slider .top-slick-slider-arrow {
+  width: 4%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: transparent;
+  z-index: 1;
+}
+@media screen and (min-width: 992px) {
+  .top-slick-slider .top-slick-slider-prev {
+    left: 1%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top-slick-slider .top-slick-slider-next {
+    right: 1%;
+  }
+}
+.top-slick-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  position: absolute;
+  margin-right: 0px;
+  margin-left: 0px;
+  left: 56%;
+  bottom: -60px;
+}
+.top-slick-slider .slick-dots li {
+  list-style-type: none;
+}
+.top-slick-slider .slick-dots li button {
+  display: block;
+  margin-right: 3px;
+  margin-left: 3px;
+  padding: 4px 4px;
+  background-color: #fff;
+  border: transparent;
+  font-size: 0;
+}
+.top-slick-slider .slick-dots .slick-active button {
+  background-color: #ffc107;
+}
