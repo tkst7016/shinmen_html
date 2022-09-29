@@ -65,77 +65,78 @@
       </div>
     </nav>
 
-    <div class="tab_content">
-      <div class="tab_pane">
-        <section class="container-fluid news-head">
-          <div class="row">
-            <div class="col-12 bg-color">
-              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/">Top</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                </ol>
-              </nav>
-              <div class="page-title mb-4 d-flex justify-content-center">
-                <div class="image-wrapper">
-                  <img src="/assets/images/Group-contact-107.png" class="figure-img img-fluid rounded"
-                      alt="placeholder">
-                </div>
-              </div>
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-12">
-                    <div class="container-fluid">
-                      <div class="image-series mb-3">
-                        <h2 class="section-title">お問合わせ内容の確認</h2>
+    <section class="container-fluid news-head">
+      <div class="row">
+        <div class="col-12 bg-color">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Top</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+          <div class="page-title mb-4 d-flex justify-content-center">
+            <div class="image-wrapper">
+              <img src="/assets/images/Group-contact-107.png" class="figure-img img-fluid rounded"
+                  alt="placeholder">
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="container-fluid">
+                  <div class="image-series mb-3">
+                    <h2 class="section-title">お問合わせ内容の確認</h2>
+                  </div>
+                  <div class="row">
+                    <form action="">
+                      <div class="container-fluid">
+                        <div class="row mb-3 g-0">
+                          <p class="col-12 col-sm-2">ご希望の相談内容</p>
+                          <input class="col-12 col-sm-2" readonly value="ご希望の相談内容">
+                        </div>
+                        <div class="row mb-3 g-0">
+                          <p class="col-12 col-sm-2">お名前</p>
+                          <input class="col-12 col-sm-2" readonly value="ご希望の相談内容">
+                        </div>
+                        <div class="row mb-3 g-0">
+                          <p class="col-12 col-sm-2">ふりがな</p>
+                          <input class="col-12 col-sm-2" readonly value="しんめんたろう">
+                        </div>
+                        <div class="row mb-3 g-0">
+                          <p class="col-12 col-sm-2">メールアドレス</p>
+                          <input class="col-12 col-sm-2" readonly value="info@shinmen.co.jp">
+                        </div>
+                        <div class="row mb-3 g-0">
+                          <p class="col-12 col-sm-2">電話番号</p>
+                          <input class="col-12 col-sm-2" readonly value="000-0000-0000">
+                        </div>
+                        <div class="row mb-3 g-0">
+                          <p class="col-12 col-sm-2">お問い合わせ内容</p>
+                          <input class="col-12 col-sm-2" readonly value="お問い合わせの内容">
+                        </div>
                       </div>
-                      <div class="row">
-                        <form action="">
-                          <div class="container-fluid">
-                            <div class="row mb-3 g-0">
-                              <p class="col-12 col-sm-2">ご希望の相談内容</p>
-                              <input class="col-12 col-sm-2" readonly value="ご希望の相談内容">
-                            </div>
-                            <div class="row mb-3 g-0">
-                              <p class="col-12 col-sm-2">お名前</p>
-                              <input class="col-12 col-sm-2" readonly value="ご希望の相談内容">
-                            </div>
-                            <div class="row mb-3 g-0">
-                              <p class="col-12 col-sm-2">ふりがな</p>
-                              <input class="col-12 col-sm-2" readonly value="しんめんたろう">
-                            </div>
-                            <div class="row mb-3 g-0">
-                              <p class="col-12 col-sm-2">メールアドレス</p>
-                              <input class="col-12 col-sm-2" readonly value="info@shinmen.co.jp">
-                            </div>
-                            <div class="row mb-3 g-0">
-                              <p class="col-12 col-sm-2">電話番号</p>
-                              <input class="col-12 col-sm-2" readonly value="000-0000-0000">
-                            </div>
-                            <div class="row mb-3 g-0">
-                              <p class="col-12 col-sm-2">お問い合わせ内容</p>
-                              <input class="col-12 col-sm-2" readonly value="お問い合わせの内容">
-                            </div>
-                          </div>
-                          <div class="view-more text-center">
-                            <button href="tech-index.html">内容を送信する<span class="right-arrow">&gt;</span></button>
-                          </div>
-                        </form>
+                      <div class="view-more text-center">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">内容を送信する<span class="right-arrow">&gt;</span></button>
                       </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
 
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p class="text-dark">お問い合わせを送信いたしました</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-
-
-
+    </section>
 
     <section class="footer pt-5">
       <div class="container">
