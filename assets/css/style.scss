@@ -320,7 +320,7 @@ span.feature-text {
     display: inline-block;
     height: 40px;
     margin-right: 20px;
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
     padding: 0 12px;
     border: solid 2px #ffc800;
     color: #ffc800;
@@ -1049,16 +1049,19 @@ span.feature-text {
     .card {
         background: inherit;
     }
-    .cat-box{
+
+    .cat-box {
         width: 50%;
         margin: 2em auto;
     }
-    .cat-hd{
+
+    .cat-hd {
         text-align: center;
     }
-    .cat-box img{
+
+    .cat-box img {
         width: 50%;
-        margin: 1em 25%; 
+        margin: 1em 25%;
     }
 }
 
@@ -1109,6 +1112,7 @@ span.feature-text {
     .header-banner {
         background-image: url("/assets/images/head_recruit.png");
     }
+
     .view-more a {
         width: 280px;
     }
@@ -1122,6 +1126,75 @@ span.feature-text {
     .requirements .divider {
         opacity: 1;
     }
+}
+
+#news {
+    /*  bootstrap ページネーション修正 */
+
+    .page-link {
+        background-color: transparent !important;
+        margin: 0 0.5em;
+        color: #FFF;
+    }
+
+    .page-link a {
+        color: #FFF !important;
+    }
+
+    .active>.page-link,
+    .page-link.active {
+        border: 1px solid #FFF !important;
+        background-color: #FFF !important;
+        color: #000;
+    }
+
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+        border: 0;
+    }
+
+    .header-banner::before {
+        background: none;
+    }
+
+    .thumb-wrap {
+        width: 90%;
+        margin: .5em auto 1em;
+    }
+
+    .thumb-wrap img {
+        width: 100%;
+    }
+
+    .news-article-nav {
+        width: 100%;
+        max-width: 1160px;
+        margin: 1em auto;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-link a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 18px;
+    }
+
+    .nav-previous {
+        text-align: left;
+    }
+
+    .nav-list {
+        text-align: center;
+    }
+
+    .nav-next {
+        text-align: right;
+    }
+
 }
 
 #news .page-title .image-wrapper {
@@ -1926,6 +1999,12 @@ h2.hedding-icon {
     h4 {
         text-align: left;
     }
+
+    .tech-img-wrap {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
 }
 
 .tech-detail {
@@ -2439,19 +2518,164 @@ h2.hedding-icon {
 .accordion-item:last-of-type .accordion-button.collapsed {
     border-radius: 0;
 }
-/*  bootstrap ページネーション修正 */
-.page-link{
-    background-color: transparent!important;
-    margin: 0 0.5em;
-    color: #FFF;
+
+/* NEWS PAGE CSS START FROM HERE */
+.news-head .news {
+    height: 75px;
+    width: 100px;
 }
-.page-link a{
-    color: #FFF!important;
+
+.news-head .news .img-news {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
-.active>.page-link, .page-link.active{
-    border: 1px solid #FFF!important;
-    background-color: #FFF!important;
-    color: #000;
+
+.tab_pane .nav-fill {
+    border-bottom: 1px solid #fff;
+}
+
+.tab_pane .nav-fill .nav-item:nth-child(0n+2),
+.tab_pane .nav-fill .nav-item:nth-child(0n+3) {
+    margin: 0px 10px;
+}
+
+.nav-fill .nav-item,
+.nav-fill>.link-nav {
+    border: 1px solid #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+}
+
+.nav-tabs .link-nav {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 6px;
+}
+
+.tab-content .first {
+    padding: 8px;
+    border: 1px solid #fff;
+    margin: 14px;
+}
+
+.tab-content .first .image {
+    height: 270px;
+    width: 300px;
+    background: #fff;
+}
+
+.tab-content .first .image .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* NEWS ARTICLE PAGE CSS START FROM HERE */
+
+.tab-pane .news-image {
+    height: 300px;
+    width: 350px;
+}
+
+.tab-pane .news-image .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* SERIES-B PAGE CSS START FROM HERE */
+
+.tab_content .product-logo {
+    height: 75px;
+    width: 100px;
+}
+
+.tab_content .product-logo .img-product {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tab_content .col-3 .series-name {
+    font-size: 5rem;
+}
+
+.tab_content .col-3 .series-heading {
+    font-size: 2.5rem;
+}
+
+.tab_content .col-4 .image {
+    height: 80px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.tab_content .col-4 .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tab_content .col-7 .image {
+    height: 500px;
+    width: 367px;
+}
+
+.tab_content .col-7 .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tab_content .series-tab .nav-fill {
+    border: none;
+}
+
+.tab_content .series-tab .nav-fill .nav-item {
+    border-top-right-radius: 0px;
+}
+
+.tab_content .series-tab .nav-tabs .nav-link {
+    border-top-right-radius: unset;
+    padding: 5px 22px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.tab_content .series-tab .nav-fill .nav-item {
+    margin: 0px 10px;
+}
+
+.tab_content .series-tab .nav-fill .nav-item,
+.nav-fill>.link-nav {
+    border: 2px solid #ffffff7d;
+}
+
+.tab_content .tab-content .first_tab .image_logo {
+    height: 100px;
+    width: 200px;
+}
+
+.tab_content .tab-content .first_tab .image_logo .img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tab_content .tab-content .first_tab .function .image {
+    height: 80px;
+    width: 80px;
+}
+
+.tab_content .tab-content .first_tab .function .image .img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tab_content .tab-content .first_tab .brand_images .image {
+    height: 400px;
+    width: 380px;
 }
 .page-item:first-child .page-link , .page-item:last-child .page-link{
     border: 0;
@@ -2531,4 +2755,69 @@ h2.hedding-icon {
             }
         }
     }
+=======
+
+.tab_content .tab-content .first_tab .brand_images .image .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tab_content .table_brand tr td {
+    border: 2px solid #ffffff7d;
+    height: 45px;
+}
+
+/* SERIES-A PAGE CSS START FROM HERE */
+
+.tab_content .space-top {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+.tab_content .col-3 .series-name {
+    font-size: 5rem;
+    opacity: 0.7;
+}
+
+.tab_content .col-3 .series-heading {
+    opacity: 0.7;
+    margin-left: 20px;
+}
+
+.tab_content .col-4 .image {
+    height: 80px;
+    width: 160px;
+    margin-left: 20px;
+}
+
+.tab_content .col-4 .img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tab_content .tab-content .first_tab .image_logo {
+    height: 120px;
+    width: 200px;
+    margin-right: 30px;
+}
+
+.tab_content .tab-content .first_tab .image_logo .img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tab-content .accordion_border {
+    border-radius: unset;
+    margin-bottom: 20px;
+}
+
+.tab-content .accordion_border .accordion-button {
+    border-radius: unset;
+    color: #fff;
+    background-color: #000;
+    border-top: 1px solid #fff;
+    box-shadow: none;
 }
