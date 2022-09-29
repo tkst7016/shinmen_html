@@ -1597,6 +1597,11 @@ h2.hedding-icon {
 .brands .tech-item h4 {
   text-align: left;
 }
+.brands .tech-item .tech-img-wrap {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
 
 .tech-detail {
   color: #bdbdbd;
